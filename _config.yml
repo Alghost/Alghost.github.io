@@ -1,0 +1,55 @@
+title: Alghost
+url: alghost.github.io
+author: Alghost
+email: alghost.lee@gmail.com
+description: >
+  Alghost archives.
+show_excerpts: false # set to true to show excerpts on the homepage
+
+paginate: 1
+paginate_path: "/blog/page:num/"
+
+tag_permalink_style: pretty
+tag_page_layout: tag_page
+tag_page_dir: tag
+
+# jekyll-dash date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+dash:
+  # the way how dates should be displayed
+  date_format: "%Y.%m.%d"
+
+
+  # generate social links in footer
+  # supported colors: green, red, orange, blue, cyan, pink, teal, yellow, indigo, purple
+  social_links:
+    - url: https://www.facebook.com/alghostman/
+      icon: facebook-square
+      color: cyan
+    - url: https://www.instagram.com/alghost.lee/
+      icon: instagram-square
+      color: red
+    - url: https://github.com/alghost
+      icon: github-square
+      color: purple
+
+  # wether the author box should be displayed
+  show_author: true
+
+  # the animation speed of the scroll-in effect
+  animation_speed: 50
+
+  # wether to enable Right-to-Left support or not
+  rtl: false
+
+  # Replaces the default avatar provider (gravatar)
+  #avatar_source: github
+  #github_username: bitbrain
+  #avatar_source: local
+  #avatar_path: /assets/avatar.png
+
+retmoe_theme: bitbrain/jekyll-dash@v2
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag
+ - jekyll-paginate
